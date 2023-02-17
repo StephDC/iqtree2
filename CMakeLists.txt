@@ -857,10 +857,10 @@ endif()
 # add the install targets
 ##############################################################
 install (TARGETS iqtree2 DESTINATION bin)
-install (FILES "${PROJECT_SOURCE_DIR}/example/models.nex" DESTINATION .)
-install (FILES "${PROJECT_SOURCE_DIR}/example/example.phy" DESTINATION .)
-install (FILES "${PROJECT_SOURCE_DIR}/example/example.nex" DESTINATION .)
-install (FILES "${PROJECT_SOURCE_DIR}/example/example.cf" DESTINATION .)
+install (FILES "${PROJECT_SOURCE_DIR}/example/models.nex" DESTINATION share/doc/iqtree2/example)
+install (FILES "${PROJECT_SOURCE_DIR}/example/example.phy" DESTINATION share/doc/iqtree2/example)
+install (FILES "${PROJECT_SOURCE_DIR}/example/example.nex" DESTINATION share/doc/iqtree2/example)
+install (FILES "${PROJECT_SOURCE_DIR}/example/example.cf" DESTINATION share/doc/iqtree2/example)
 
 if (WIN32)
     install (FILES "${BINARY_DIR}/iqtree2${EXE_SUFFIX}-click.exe" DESTINATION bin)
